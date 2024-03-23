@@ -4,7 +4,6 @@ from typing import List, Optional
 from transformers.tokenization_utils import PreTrainedTokenizer
 from transformers.utils import logging
 
-
 logger = logging.get_logger(__name__)
 
 VOCAB_FILES_NAMES = {"vocab_file": "vocab.txt"}
@@ -21,9 +20,9 @@ PRETRAINED_POSITIONAL_EMBEDDINGS_SIZES = {
 
 
 def load_vocab_file(vocab_file):
-    with open(vocab_file, "r") as f:
+    with open(vocab_file) as f:
         lines = f.read().splitlines()
-        return [l.strip() for l in lines]
+        return [l.strip() for l in lines]  # noqa: E741
 
 
 class RnaBertTokenizer(PreTrainedTokenizer):
