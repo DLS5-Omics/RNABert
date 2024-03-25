@@ -20,6 +20,8 @@
   "clean_up_tokenization_spaces": true,
   "pad_token": "<pad>",
   "mask_token": "<mask>",
-  "model_max_length": 1000000000000000019884624838656,
+  "cls_token": "<mask>",
+  "unk_token": "<mask>",
+  "model_max_length": 440,
   "tokenizer_class": "RnaBertTokenizer"
 }

@@ -10,7 +10,7 @@ vocab_list = [
     "<pad>",
     "<mask>",
     "A",
-    "U",
+    "T",
     "G",
     "C",
 ]
